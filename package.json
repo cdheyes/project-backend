@@ -1,0 +1,20 @@
+{
+  "name": "project-backend",
+  "version": "1.0.0",
+  "description": "Andrews test\r Elliot test\r Robin test\r lidnen test\r chris's test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdheyes/project-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cdheyes/project-backend/issues"
+  },
+  "homepage": "https://github.com/cdheyes/project-backend#readme"
+}
