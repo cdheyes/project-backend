@@ -19,7 +19,7 @@ userRouter.patch("/user", updateUser);
 userRouter.delete("/user", deleteUser);
 
 // route for user login
-userRouter.get("/user/login", hashDecrypt, userLogin);
+userRouter.post("/user/login", hashDecrypt, userLogin);
 
 // export 
 module.exports = userRouter;

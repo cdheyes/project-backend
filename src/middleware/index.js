@@ -13,13 +13,13 @@ exports.hashPass = async (req, res, next) => {
     }
 };
 exports.hashDecrypt = async (req, res, next) => {
-    const user = await User.findOne({username: req.body.username});
-    if (user == null){
+    const userAccount = await User.findOne({username: req.body.username});
+    if (userAccount == null){
         return res.status(400).send("Cannot find user");
     }  
     try {
-        if (await bcrypt.compare(req.body.password, user.password)) {
-            loggedIn = user;
+        if (await bcrypt.compare(req.body.password, userAccount.password)) {
+            req.user = userAccount;
             next();
         } else {
             res.status(300).send("Incorrect Password");
